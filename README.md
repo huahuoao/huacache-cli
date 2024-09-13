@@ -1,24 +1,21 @@
-# huacache-test
+# huacache-cli
 
-## Project setup
-```
+## 项目启动
+```shell
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
+```shell
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
+## 项目部署
+
+```shell
+git clone https://github.com/huahuoao/huacache-cli
+docker pull node:20
+docker pull nginx:alpine
+docker build -t huacache-cli .
+docker run -itd -p 8080:80 huacache-cli
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
