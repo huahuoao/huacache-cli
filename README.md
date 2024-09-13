@@ -13,6 +13,7 @@ npm run serve
 
 ```shell
 git clone https://github.com/huahuoao/huacache-cli
+cd huacache-cli
 docker pull node:20
 docker pull nginx:alpine
 docker build -t huacache-cli .
